@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="UTF-8">
+	<title>MusicStore</title>
+	<link rel="icon" href="imgs/vinyl.png">
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<script src="menu.js"></script>
+	<img src="imgs/logo.png" alt="Logotipo">
+	<br>
+	<br>
+	<ul>
+		<li><a class="activo" onmouseover="playSong('0')" href="index.html">HOME</a></li>
+		<li> <a onmouseover="playSong('1')" href="sobre-nos.html" >SOBRE NÓS</a></li>
+		<li onmouseenter="playSong('2')" class="liHover">
+			<button  class="dropbtn">AULAS</button>
+			<div class="dropdown-content fade">
+				<img class="imageMenu1" src="imgs/piano.png" alt="piano"><a onmouseover="playSong('6')" href="aulas_piano.html">PIANO</a>
+				<img class="imageMenu2" src="imgs/guitar.png" alt="guitar"><a onmouseover="playSong('7')" href="aulas_guitarra.html">GUITARRA</a>
+				<img class="imageMenu3" src="imgs/violin.png" alt="violin"><a onmouseover="playSong('8')" href="aulas_violino.html">VIOLINO</a>
+				<img class="imageMenu4" src="imgs/saxophone.png" alt="saxophone"><a onmouseover="playSong('9')" href="aulas_saxofone.html">SAXOFONE</a>
+			</div>
+		</li>
+		<li><a onmouseover="playSong('3')" href="noticias.html">NOTÍCIAS</a></li>
+		<li><a onmouseover="playSong('4')" href="contactos.html">CONTACTOS</a></li>
+		<li><a onmouseover="playSong('5')" href="loja.html">LOJA</a></li>
+		<li onmouseenter="playSong('6')" class="liHover">
+			<button class="dropbtn">LOGIN/REGISTO</button>
+			<div class="dropdown-content fade">
+				<br>
+				<form action="./index.php" method="post">
+					<label for="username"><b>&nbsp;&nbsp;Utilizador&nbsp;&nbsp;</b></label>
+					<input type="text" placeholder="Nome de Utilizador" id="username" name="username" required>
+					<label for="password"><b>&nbsp;&nbsp;Password&nbsp;&nbsp;</b></label>
+					<input type="password" placeholder="Password" id="password" name="password" required>
+					<center><input type="submit" class="button" style="margin: 0 auto; overflow: auto;" name="login" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="button" style="margin: 0 auto; overflow: auto;" name="register" value="Registar"></center>
+				</form>
+				<br>
+			</div>
+		</li>
+	</ul>
+	<br>
+	<br>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img alt="Pianista em concerto" src="imgs/1.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<img alt="Banda em concerto" src="imgs/2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<img alt="Cantora em concerto" src="imgs/3.jpg" style="width:100%">
+		</div>
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot" id="dot1" onClick="dotClick(this.id)"></span>
+		<span class="dot" id="dot2" onClick="dotClick(this.id)"></span>
+		<span class="dot" id="dot3" onClick="dotClick(this.id)"></span>
+	</div>
+	<script src="slideshow.js"></script>
+	<script src="script.js"></script>
+	<div style="text-align: center;">
+	<table>
+		<tr>
+			<th><h1 style="font-family: Photograph Signature; font-size: 35px">Top 10</h1></th>
+		</tr>
+		<tr>
+			<th>
+				<img class="imground" id="image1" onclick="onSongClick(this.id);" src="imgs/pic1.jpg" alt="Capa do album da música">
+				<img class="imgPlay" id="play1" src="imgs/play.png" alt="Play/Pause">
+				<h2>JERUSALEMA</h2>
+				<p>MASTER KG FEAT. NOMCEBO ZIKODE</p>
+				</th>
+			<th>
+				<img class="imground" id="image2" onclick="onSongClick(this.id);" src="imgs/pic2.jpg" alt="Capa do album da música">
+				<img class="imgPlay" id="play2" src="imgs/play.png" alt="Play/Pause">
+				<h2>RECOMEÇAR</h2>
+				<p>FERNANDO DANIEL</p>
+				</th>
+			<th>
+				<img class="imground" id="image3" src="imgs/pic3.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play3" src="imgs/play.png" alt="Play/Pause">
+				<h2>SOME SAY</h2>
+				<p>NEA</p>
+				</th>
+			<th>
+				<img class="imground" id="image4" src="imgs/pic4.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play4" src="imgs/play.png" alt="Play/Pause">
+				<h2>IN YOUR EYES</h2>
+				<p>THE WEEKND</p>
+				</th>
+			<th>
+				<img class="imground" id="image5" src="imgs/pic5.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play5" src="imgs/play.png" alt="Play/Pause">
+				<h2>BRUISES</h2>
+				<p>LEWIS CAPALDI</p>
+				</th>
+		</tr>
+		<tr>
+			<th>
+				<img class="imground" id="image6" src="imgs/pic6.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play6" src="imgs/play.png" alt="Play/Pause">
+				<h2>ASSOBIA PARA O LADO</h2>
+				<p>CARLÃO</p>
+				</th>
+			<th>
+				<img class="imground" id="image7" src="imgs/pic7.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play7" src="imgs/play.png" alt="Play/Pause">
+				<h2>CONV. IN THE DARK</h2>
+				<p>JOHN LEGEND</p>
+				</th>
+			<th>
+				<img class="imground" id="image8" src="imgs/pic8.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play8" src="imgs/play.png" alt="Play/Pause">
+				<h2>DYNAMITE</h2>
+				<p>BTS</p>
+				</th>
+			<th>
+				<img class="imground" id="image9" src="imgs/pic9.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play9" src="imgs/play.png" alt="Play/Pause">
+				<h2>MOOD</h2>
+				<p>24KGOLDN FEAT. IANN DIOR</p>
+				</th>
+			<th>
+				<img class="imground" id="image10" src="imgs/pic10.jpg" onclick="onSongClick(this.id);" alt="Capa do album da música">
+				<img class="imgPlay" id="play10" src="imgs/play.png" alt="Play/Pause">
+				<h2>TARDE DEMAIS</h2>
+				<p>NUNO RIBEIRO</p>
+				</th>
+		</tr>
+	</table>
+	</div>
+	<br>
+	<br>
+</body>
+<footer>
+	© 2020 Rubén Barbosa e Rui Moreira
+</footer>
+</html>
