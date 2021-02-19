@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MusicStore | Noticias</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="imgs/vinyl.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<script src="menu.js"></script>
+	<img src="imgs/logo.png" alt="Logotipo">
+	<br>
+	<br>
+	<ul>
+		<li><a onmouseover="playSong('0')" href="index.html">HOME</a></li>
+		<li><a onmouseover="playSong('1')" href="sobre-nos.html">SOBRE NÓS</a></li>
+		<li onmouseenter="playSong('2')" class="liHover">
+			<button class="dropbtn">AULAS</button>
+			<div class="dropdown-content fade">
+				<img class="imageMenu1" src="imgs/piano.png" alt="piano"><a onmouseover="playSong('6')" href="aulas_piano.html">PIANO</a>
+				<img class="imageMenu2" src="imgs/guitar.png" alt="guitar"><a onmouseover="playSong('7')" href="aulas_guitarra.html">GUITARRA</a>
+				<img class="imageMenu3" src="imgs/violin.png" alt="violin"><a onmouseover="playSong('8')" href="aulas_violino.html">VIOLINO</a>
+				<img class="imageMenu4" src="imgs/saxophone.png" alt="saxophone"><a onmouseover="playSong('9')" href="aulas_saxofone.html">SAXOFONE</a>
+			</div>
+		</li>
+		<li><a onmouseover="playSong('3')" class="activo" href="noticias.html">NOTÍCIAS</a></li>
+		<li><a onmouseover="playSong('4')" href="contactos.html">CONTACTOS</a></li>
+		<li><a onmouseover="playSong('5')" href="loja.html">LOJA</a></li>
+		<li onmouseenter="playSong('6')" class="liHover">
+			<button class="dropbtn">LOGIN/REGISTO</button>
+			<div class="dropdown-content fade">
+				<br>
+				<label for="username"><b>&nbsp;&nbsp;Utilizador&nbsp;&nbsp;</b></label>
+				<input type="text" placeholder="Nome de Utilizador" name="username" required>
+				<label for="password"><b>&nbsp;&nbsp;Password&nbsp;&nbsp;</b></label>
+				<input type="password" placeholder="Password" name="password" required>
+				<center><button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Registar</button></center>
+				<br>
+			</div>
+		</li>
+	</ul>
+	<br>
+	<br>
+	<h1 class="margin">Noticias</h1>
+	<center>
+	<table>
+		<tr>
+			<th><img src="imgs/img-01.png" alt="Logotipo"></th>
+			<th>
+			<h2>Paul McCartney e Taylor Swift na capa da Rolling Stone e muito mais nas imagens da semana</h2>
+			<p>Veja também Dua Lipa, Cardi B, Harry Styles, BTS, Justin Bieber entre outros destaques</p>
+			<a href="https://www.vagalume.com.br/news/2020/11/15/imagens-da-semana107.html"> Ler+</a>
+			</th>
+		</tr>
+		<tr>
+			<th><img src="imgs/img-02.png" alt="Logotipo"></th>
+			<th>
+			<h2>Elton John lança caixa cheia de raridades e músicas inéditas. Ouça!</h2>
+			<p>"Jewel Box" tem 127 músicas e quase nove horas de duração</p>
+			<a href="https://www.vagalume.com.br/news/2020/11/14/elton-john-lanca-caixa-cheia-de-raridades-e-musicas-ineditas-ouca.html"> Ler+</a>
+			</th>
+		</tr>
+		<tr>
+			<th><img src="imgs/img-03.png" alt="Logotipo"></th>
+			<th>
+			<h2>Miley Cyrus revela tracklist de "Plastic Hearts", com parcerias de Joan Jett, Billy Idol e Dua Lipa</h2>
+			<p>Novo trabalho de estúdio da cantora chega no dia 27 de novembro</p>
+			<a href="https://www.vagalume.com.br/news/2020/11/13/miley-cyrus-revela-tracklist-de-plastic-hearts-com-parcerias-de-joan-jett-billy-idol-e-dua-lipa.html"> Ler+</a>
+			</th>
+		</tr>
+		<tr>
+			<th><img src="imgs/img-04.png" alt="Logotipo"></th>
+			<th>
+			<h2>Com estilo misturando gêneros, Harry Styles estampa a capa da revista "Vogue". Veja as fotos</h2>
+			<p>Cantor se tornou um dos assuntos mais comentados na internet com seu novo ensaio fotográfico</p>
+			<a href="https://www.vagalume.com.br/news/2020/11/13/com-estilo-misturando-generos-harry-styles-estampa-a-capa-da-revista-vogue-veja-as-fotos.html"> Ler+</a>
+			</th>
+		</tr>
+		<tr>
+			<th><img src="imgs/img-05.png" alt="Logotipo"></th>
+			<th>
+			<h2>Ariana Grande segue no topo da parada de singles do Reino Unido com "positions"</h2>
+			<p>Cantora está com três músicas entre as 40 mais. Litlte Mix também se destacou</p>
+			<a href="https://www.vagalume.com.br/news/2020/11/13/ariana-grande-segue-no-topo-da-parada-de-singles-do-reino-unido-com-positions.html"> Ler+</a>
+			</th>
+		</tr>
+	</table>
+	</center>
+	<br>
+	<br>
+</body>
+<footer>
+    © 2020 Rubén Barbosa e Rui Moreira
+</footer>
+</html>

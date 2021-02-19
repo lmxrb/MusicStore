@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>MusicStore | Contactos</title>   
+        <link rel="stylesheet" href="styleContactos.css">       
+            <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="imgs/vinyl.png"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    </head>     
+    <body> 
+        <script src="menu.js"></script>         
+        <img src="imgs/logo.png" alt="Logotipo"> 
+        <br> 
+        <br> 
+        <ul> 
+            <li>
+                <a onmouseover="playSong('0')" href="index.html">HOME</a>
+            </li>             
+            <li>
+                <a onmouseover="playSong('1')" href="sobre-nos.html">SOBRE NÓS</a>
+            </li>             
+            <li onmouseenter="playSong('2')" class="liHover"> 
+                <button class="dropbtn">AULAS</button>                 
+                <div class="dropdown-content fade"> 
+                    <img class="imageMenu1" src="imgs/piano.png" alt="piano">
+                    <a onmouseover="playSong('6')" href="aulas_piano.html">PIANO</a> 
+                    <img class="imageMenu2" src="imgs/guitar.png" alt="guitar">
+                    <a onmouseover="playSong('7')" href="aulas_guitarra.html">GUITARRA</a> 
+                    <img class="imageMenu3" src="imgs/violin.png" alt="violin">
+                    <a onmouseover="playSong('8')" href="aulas_violino.html">VIOLINO</a> 
+                    <img class="imageMenu4" src="imgs/saxophone.png" alt="saxophone">
+                    <a onmouseover="playSong('9')" href="aulas_saxofone.html">SAXOFONE</a> 
+                </div>                 
+            </li>             
+            <li>
+                <a onmouseover="playSong('3')" href="noticias.html">NOTÍCIAS</a>
+            </li>             
+            <li>
+                <a onmouseover="playSong('4')" class="activo" href="contactos.html">CONTACTOS</a>
+            </li>             
+            <li>
+                <a onmouseover="playSong('5')" href="loja.html">LOJA</a>
+            </li>             
+            <li onmouseenter="playSong('6')" class="liHover"> 
+                <button class="dropbtn">LOGIN/REGISTO</button>                 
+                <div class="dropdown-content fade"> 
+                    <br> 
+                    <label for="username">
+                        <b>&nbsp;&nbsp;Utilizador&nbsp;&nbsp;</b>
+                    </label>                     
+                    <input type="text" style="width:76%; padding: 12px 20px; margin: 8px; display: inline-block;" placeholder="Nome de Utilizador" id="username" required> 
+                    <label for="password">
+                        <b>&nbsp;&nbsp;Password&nbsp;&nbsp;</b>
+                    </label>                     
+                    <input type="password" placeholder="Password" id="password" required> 
+                    <center>
+                        <button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Login</button>                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Registar</button>
+                    </center>                     
+                    <br> 
+                </div>                 
+            </li>             
+        </ul>         
+        <br> 
+        <br> 
+        <h1 class="margin">Contactos</h1> 
+        <div class="containerSubmissao"> 
+            <form action="action_page.php"> 
+                <label for="fname">Nome</label>                 
+                <input type="text" id="fname" name="firstname" placeholder="O teu nome..."> 
+                <label for="lname">Email</label>                 
+                <input type="text" id="lname" name="lastname" placeholder="O teu endereço de e-mail..."> 
+                <label for="country">País</label>                 
+                <select id="country" name="País"> 
+                    <option value="australia">Portugal</option>                     
+                    <option value="canada">Brasil</option>                     
+                    <option value="canada">Espanha</option>                     
+                    <option value="usa">USA</option>                     
+                </select>                 
+                <label for="subject">Assunto</label>                 
+                <textarea id="subject" name="subject" placeholder="Escrever aqui..." style="height:200px"></textarea> 
+                <input type="submit" value="Submeter"> 
+            </form>             
+        </div>         
+        <h1 class="margin">Onde estamos</h1> 
+        <br> 
+        <center>
+            <iframe class="responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6728007672946!2d-8.625784284622235!3d41.119836479289546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24652cef362d7d%3A0x99f999b4ed3788d3!2sInstituto%20Superior%20Polit%C3%A9cnico%20Gaya!5e0!3m2!1spt-PT!2spt!4v1605544185256!5m2!1spt-PT!2spt" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </center>         
+        <br> 
+        <br> 
+    </body>     
+    <footer> 
+        © 2020 Rubén Barbosa e Rui Moreira
+</footer>     
+</html>

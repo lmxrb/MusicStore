@@ -1,0 +1,47 @@
+/* formulario dos contactos */
+input#lname, input#fname {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: transparent;
+    color: white;
+}
+
+select#country, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: transparent;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #444444;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+option {
+    background-color: black;
+}
+
+.containerSubmissao {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 18px;
+}
