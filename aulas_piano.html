@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MusicStore | Aulas de Piano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAulas.css">
+    <link rel="icon" href="imgs/vinyl.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <script src="menu.js"></script>
+    <img src="imgs/logo.png" alt="Logotipo">
+    <br>
+    <br>
+    <ul>
+        <li><a onmouseover="playSong('0')" href="index.html">HOME</a></li>
+        <li><a onmouseover="playSong('1')" href="sobre-nos.html">SOBRE NÓS</a></li>
+        <li onmouseenter="playSong('2')" class="liHover">
+            <button class="dropbtnActivo">AULAS</button>
+            <div class="dropdown-content fade">
+                <img class="imageMenu1" src="imgs/piano2.png" alt="piano"><a onmouseover="playSong('6')" style="color: black;background-color: white;" href="aulas_piano.html">PIANO</a>
+                <img class="imageMenu2" src="imgs/guitar.png" alt="guitar"><a onmouseover="playSong('7')" href="aulas_guitarra.html">GUITARRA</a>
+                <img class="imageMenu3" src="imgs/violin.png" alt="violin"><a onmouseover="playSong('8')" href="aulas_violino.html">VIOLINO</a>
+                <img class="imageMenu4" src="imgs/saxophone.png" alt="saxophone"><a onmouseover="playSong('9')" href="aulas_saxofone.html">SAXOFONE</a>
+            </div>
+        </li>
+        <li><a onmouseover="playSong('3')" href="noticias.html">NOTÍCIAS</a></li>
+        <li><a onmouseover="playSong('4')" href="contactos.html">CONTACTOS</a></li>
+        <li><a onmouseover="playSong('5')" href="loja.html">LOJA</a></li>
+        <li onmouseenter="playSong('6')" class="liHover">
+            <button class="dropbtn">LOGIN/REGISTO</button>
+            <div class="dropdown-content fade">
+                <br>
+                <label for="username"><b>&nbsp;&nbsp;Utilizador&nbsp;&nbsp;</b></label>
+                <input type="text" placeholder="Nome de Utilizador" name="username" required>
+                <label for="password"><b>&nbsp;&nbsp;Password&nbsp;&nbsp;</b></label>
+                <input type="password" placeholder="Password" name="password" required>
+                <center><button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Registar</button></center>
+                <br>
+            </div>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <h1 class="margin">Aulas de Piano</h1>
+    <table>
+        <tr>
+            <th><img class="imground" src="imgs/img (0).jpg"></th>
+            <th>Professor Manuel<br>
+            6,5€/Hora<br>
+            Olá sou o Professor Manuel, fui pianista durante 10 anos e dou aulas do instrumento há 6 anos na MusicStore.<br>
+            <a href="">Inscrever</a></th>
+        </tr>
+        <tr>
+            <th><img class="imground" src="imgs/img (1).jpg"></th>
+            <th>Professor Rui<br>
+            7,5€/Hora<br>
+            Olá sou o Professor Rui, toco piano há 18 anos e dou aulas há 5 anos e adoro a minha profissão.<br>
+            <a href="">Inscrever</a></th>
+        </tr>
+    </table>
+    <br>
+<br>
+</body>
+<footer>
+    2020 Rubén Barbosa e Rui Moreira
+</footer>
+</html>
