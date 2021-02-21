@@ -1,7 +1,7 @@
 <?php
 require './vendor/autoload.php';
 use Mailgun\Mailgun;
-$mgClient = new Mailgun('17ea3f4eb03fd84d87a266af25c33a4d-203ef6d0-fd109b8e');
+$mgClient = new Mailgun('');
 $domain = "https://api.eu.mailgun.net/v3/musicstoreportugal.pt";
 if ((strlen($_POST['subject']) and ($_POST['firstname']) and ($_POST['email']))>0) {
 	
