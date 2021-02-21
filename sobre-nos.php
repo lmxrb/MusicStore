@@ -3,51 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MusicStore | Sobre Nós</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="imgs/vinyl.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/vinyl.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.86">
 </head>
-<style>
-	/*margens e justificar texto*/
-	p {
-	  margin-right: 80px;
-	  margin-left: 80px;
-	  text-align: justify;
-	}
-</style>
 <body>
-	<script src="menu.js"></script>
-	<img src="imgs/logo.png" alt="Logotipo">
-	<br>
-	<br>
-	<ul>
-		<li><a onmouseover="playSong('0')" href="index.html">HOME</a></li>
-		<li><a onmouseover="playSong('1')" class="activo" href="sobre-nos.html">SOBRE NÓS</a></li>
-		<li onmouseenter="playSong('2')" class="liHover">
-			<button class="dropbtn">AULAS</button>
-			<div class="dropdown-content fade">
-				<img class="imageMenu1" src="imgs/piano.png" alt="piano"><a onmouseover="playSong('6')" href="aulas_piano.html">PIANO</a>
-				<img class="imageMenu2" src="imgs/guitar.png" alt="guitar"><a onmouseover="playSong('7')" href="aulas_guitarra.html">GUITARRA</a>
-				<img class="imageMenu3" src="imgs/violin.png" alt="violin"><a onmouseover="playSong('8')" href="aulas_violino.html">VIOLINO</a>
-				<img class="imageMenu4" src="imgs/saxophone.png" alt="saxophone"><a onmouseover="playSong('9')" href="aulas_saxofone.html">SAXOFONE</a>
-			</div>
-		</li>
-		<li><a onmouseover="playSong('3')" href="noticias.html">NOTÍCIAS</a></li>
-		<li><a onmouseover="playSong('4')" href="contactos.html">CONTACTOS</a></li>
-		<li><a onmouseover="playSong('5')" href="loja.html">LOJA</a></li>
-		<li onmouseenter="playSong('6')" class="liHover">
-			<button class="dropbtn">LOGIN/REGISTO</button>
-			<div class="dropdown-content fade">
-				<br>
-				<label for="username"><b>&nbsp;&nbsp;Utilizador&nbsp;&nbsp;</b></label>
-				<input type="text" placeholder="Nome de Utilizador" name="username" required>
-				<label for="password"><b>&nbsp;&nbsp;Password&nbsp;&nbsp;</b></label>
-				<input type="password" placeholder="Password" name="password" required>
-				<center><button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" style="margin: 0 auto; overflow: auto;" type="submit">Registar</button></center>
-				<br>
-			</div>
-		</li>
-	</ul>
+    <?php include './php/commonLayout.php' ?>
+    <script>
+        document.getElementById("ulMenu").children.item(1).firstElementChild.classList.add("activo");
+    </script>
+    <style>
+        /*margens e justificar texto*/
+        p {
+            margin-right: 80px;
+            margin-left: 80px;
+            text-align: justify;
+        }
+    </style>
 	<br>
 	<br>
 	<h1 class="margin">Sobre nós</h1>
@@ -62,7 +34,7 @@
 	<p>A convivência de uma variedade tão grande de grupos etários, contagia a Academia de uma imensa vitalidade e alegria, contribuindo decisivamente para a construção de uma identidade singular, Procurando a reflexão crítica, a partilha de ideias e experiências, fomentando uma atitude participativa na construção do projecto da MusicStore.</p>
 	<p>Unir laços com a comunidade, tanto a nível artístico como pela sua intervenção social tem sido uma das preocupações constantes da MusicStore. Desde as autarquias mais próximas da sede, aos estabelecimentos de ensino de Gaia e outros parceiros, procura dar-se sentido à ideia de responsabilidade social, com actos concretos e ideias que mereceram a adesão de muitas vozes.</p>
 	<p>Temos noção da importância que a música tem enquanto agente cultural dinâmico, promotor de desenvolvimento da sociedade, fomentador da integração social e criação de emprego, gerador de riqueza no contexto das indústrias culturais.</p>
-	<center><img src="imgs/team.png" alt="A nossa equipa" class="responsive"></center>
+	<center><img src="img/team.png" alt="A nossa equipa" class="responsive"></center>
 	<br>
 	<br>
 </body>

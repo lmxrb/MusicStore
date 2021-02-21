@@ -56,7 +56,7 @@ function onSongClick(elementId) {
 		playing = true;
 		audio.currentTime=timeStamps[id];
 		audio.play();
-		document.getElementById("play" + (id+1)).src = "imgs/pause.png";
+		document.getElementById("play" + (id+1)).src = "img/pause.png";
 		//se possuir uma animacao fazer play
 		if(el.getAnimations().length > 0){
 			el.getAnimations()[0].play();
@@ -92,5 +92,5 @@ function pauseAudio(elementId) {
 	playing = false;
 	elementId.getAnimations()[0].pause();
 	audio.pause();
-	document.getElementById("play" + elementId.id.slice(5)).src = "imgs/play.png";
+	document.getElementById("play" + elementId.id.slice(5)).src = "img/play.png";
 }
